@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct DailyDiabetesApp: App {
+    @State private var authViewModel = AuthViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if authViewModel.isLoggedIn {
+                ContentView()
+                    .environment(\.authViewModel, authViewModel)
+            } else {
+                LoginView()
+                    .environment(\.authViewModel, authViewModel)
+            }
         }
     }
 }

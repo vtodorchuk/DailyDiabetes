@@ -11,6 +11,12 @@
 		3BA5C3B62C8DBB3500C0CA68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5C3B52C8DBB3500C0CA68 /* ContentView.swift */; };
 		3BA5C3B82C8DBB3700C0CA68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5C3B72C8DBB3700C0CA68 /* Assets.xcassets */; };
 		3BA5C3BB2C8DBB3700C0CA68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5C3BA2C8DBB3700C0CA68 /* Preview Assets.xcassets */; };
+		3BA5C3C62C8DC22600C0CA68 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5C3C52C8DC22600C0CA68 /* LoginView.swift */; };
+		3BA5C3C92C8DC50600C0CA68 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5C3C82C8DC50600C0CA68 /* User.swift */; };
+		3BA5C3CC2C8DC66400C0CA68 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5C3CB2C8DC66400C0CA68 /* RegistrationView.swift */; };
+		3BA5C3CE2C8DD25D00C0CA68 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5C3CD2C8DD25D00C0CA68 /* AuthViewModel.swift */; };
+		3BA5C3D12C8DDCFC00C0CA68 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5C3D02C8DDCFC00C0CA68 /* KeychainManager.swift */; };
+		3BA5C3D42C8DEB1900C0CA68 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5C3D32C8DEB1900C0CA68 /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		3BA5C3B52C8DBB3500C0CA68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3BA5C3B72C8DBB3700C0CA68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BA5C3BA2C8DBB3700C0CA68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BA5C3C52C8DC22600C0CA68 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3BA5C3C82C8DC50600C0CA68 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3BA5C3CB2C8DC66400C0CA68 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		3BA5C3CD2C8DD25D00C0CA68 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		3BA5C3D02C8DDCFC00C0CA68 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		3BA5C3D32C8DEB1900C0CA68 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,11 @@
 		3BA5C3B22C8DBB3500C0CA68 /* DailyDiabetes */ = {
 			isa = PBXGroup;
 			children = (
+				3BA5C3CF2C8DDCEF00C0CA68 /* Services */,
+				3BA5C3C32C8DBBD200C0CA68 /* Models */,
+				3BA5C3C22C8DBBCD00C0CA68 /* VIews */,
+				3BA5C3C12C8DBBBF00C0CA68 /* ViewModels */,
 				3BA5C3B32C8DBB3500C0CA68 /* DailyDiabetesApp.swift */,
-				3BA5C3B52C8DBB3500C0CA68 /* ContentView.swift */,
 				3BA5C3B72C8DBB3700C0CA68 /* Assets.xcassets */,
 				3BA5C3B92C8DBB3700C0CA68 /* Preview Content */,
 			);
@@ -65,6 +80,57 @@
 				3BA5C3BA2C8DBB3700C0CA68 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3BA5C3C12C8DBBBF00C0CA68 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3BA5C3CD2C8DD25D00C0CA68 /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3BA5C3C22C8DBBCD00C0CA68 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				3BA5C3D22C8DEB0900C0CA68 /* Tabs */,
+				3BA5C3C42C8DC21600C0CA68 /* Auth */,
+				3BA5C3B52C8DBB3500C0CA68 /* ContentView.swift */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		3BA5C3C32C8DBBD200C0CA68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BA5C3C82C8DC50600C0CA68 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3BA5C3C42C8DC21600C0CA68 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3BA5C3C52C8DC22600C0CA68 /* LoginView.swift */,
+				3BA5C3CB2C8DC66400C0CA68 /* RegistrationView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3BA5C3CF2C8DDCEF00C0CA68 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3BA5C3D02C8DDCFC00C0CA68 /* KeychainManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3BA5C3D22C8DEB0900C0CA68 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				3BA5C3D32C8DEB1900C0CA68 /* AccountView.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA5C3C92C8DC50600C0CA68 /* User.swift in Sources */,
+				3BA5C3CE2C8DD25D00C0CA68 /* AuthViewModel.swift in Sources */,
+				3BA5C3D12C8DDCFC00C0CA68 /* KeychainManager.swift in Sources */,
+				3BA5C3C62C8DC22600C0CA68 /* LoginView.swift in Sources */,
+				3BA5C3D42C8DEB1900C0CA68 /* AccountView.swift in Sources */,
 				3BA5C3B62C8DBB3500C0CA68 /* ContentView.swift in Sources */,
 				3BA5C3B42C8DBB3500C0CA68 /* DailyDiabetesApp.swift in Sources */,
+				3BA5C3CC2C8DC66400C0CA68 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
